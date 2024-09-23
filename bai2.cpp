@@ -41,7 +41,7 @@ void ThemVaoDau(LIST &l, NODE *a){
 	if(l.phead == NULL){
 		l.phead = l.ptail = a; // rong thi node dau hay cuoi cung nhu nhau	
 	}else{
-		a->pNext= l.phead ;  // cho con tro cua node cân them la node a lien ket voi node dau phead
+		a->pNext= l.phead ;  // cho con tro cua node cÃ¢n them la node a lien ket voi node dau phead
 		l.phead = a; // cap nhap lai node dau a
 	}
 
@@ -52,7 +52,7 @@ void ThemVaCuoi(LIST &l, NODE *a){
 	if(l.phead == NULL){
 		l.phead = l.ptail = a; // rong thi node dau hay cuoi cung nhu nhau	
 	}else{
-		l.ptail->pNext; // con tro cua ptail lien ket vs ndoe a
+		l.ptail->pNext = a; // con tro cua ptail lien ket vs ndoe a
 		l.ptail = a; // cap nhat lai
 	}
 }
